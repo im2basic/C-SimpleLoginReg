@@ -1,0 +1,18 @@
+@model SimpleLoginReg.Models.LogUser
+
+<div>
+    <span asp-validation-for="LoginEmail"></span>
+    <span asp-validation-for="LoginPassword"></span>
+
+</div>
+<form asp-asp-action="Login" asp-controller="Home">
+    <div>
+        <label asp-for="LoginEmail"></label>
+        <input asp-for="LoginEmail">
+    </div>
+    <div>
+        <label asp-for="LoginPassword"></label>
+        <input asp-for="LoginPassword">
+    </div>
+    <input type="submit" value="Login">
+</form>
